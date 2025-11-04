@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima Agora</title>
+    <link rel="stylesheet" href="./src/styles/global.css" />
+  </head>
+  <body>
+    <!-- Faixa superior -->
+    <header class="hero">
+      <h1>🌤️ Clima Agora</h1>
+      <p>Veja o clima atual em qualquer cidade do mundo</p>
+    </header>
+
+    <!-- Campo de busca -->
+    <section class="search-section">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Digite o nome da cidade..."
+      />
+      <button id="searchBtn">Buscar</button>
+    </section>
+
+    <!-- Card de resultado -->
+    <section id="weatherCard" class="weather-card hidden">
+      <div class="weather-header">
+        <h2 id="cityName"></h2>
+      </div>
+      <div class="weather-body">
+        <div class="icon-temp">
+          <span id="weatherIcon">🌤️</span>
+          <h3 id="temperature"></h3>
+        </div>
+        <p id="description"></p>
+      </div>
+    </section>
+
+    <!-- Mensagem de erro -->
+    <p id="errorMsg" class="error hidden"></p>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>Desenvolvido por <strong>Pedro</strong> ☁️</p>
+    </footer>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
